@@ -3,7 +3,7 @@ provider:
   gateway: http://127.0.0.1:8080
 
 functions:
-  geohash:
+  hello:
     lang: java8
-    handler: ./geohash
-    image: pjimanov/geohash:latest
+    handler: ./hello
+    image: pjimanov/hello:latest
