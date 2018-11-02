@@ -1,3 +1,4 @@
 template
 build
 .vscode/*
+.DS_Store
