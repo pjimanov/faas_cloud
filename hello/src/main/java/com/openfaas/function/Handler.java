@@ -13,9 +13,8 @@ public class Handler implements com.openfaas.model.IHandler {
     public IResponse Handle(IRequest req) {
         Response res = new Response();
         SimpleDateFormat dateTimeInGMT = new SimpleDateFormat("yyyy-MMM-dd hh:mm:ss aa");
-	    dateTimeInGMT.setTimeZone(TimeZone.getTimeZone("GMT"));
-        res.setBody("Hello, Pav...");
+	dateTimeInGMT.setTimeZone(TimeZone.getTimeZone("GMT"));
         res.setBody(dateTimeInGMT.format(new Date()));
-	    return res;
+	return res;
     }
 }
